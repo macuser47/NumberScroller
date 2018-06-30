@@ -19,10 +19,10 @@
                 setInterval(function() {
                     i++
                     rand = Math.floor(Math.random() * 10);
-                    $("#number").html($("#number").html() + "" + rand);
+                    $("#number").append(rand);
 
                     if (i % 50 == 0) {
-                        $("#number").html($("#number").html() + "<p>");
+                        $("#number").append("<p>");
                     }
 
                     $(document).scrollTop($(document).height());
